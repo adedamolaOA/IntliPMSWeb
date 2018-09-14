@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="IntliPMSWebPU" transaction-type="RESOURCE_LOCAL">
+    <jta-data-source>java:app/intlipmsDS</jta-data-source>
+    <class>com.intlipms.web.entities.Company</class>
+    <class>com.intlipms.web.entities.CompanyCustomer</class>
+    <class>com.intlipms.web.entities.CompanyPrivileges</class>
+    <class>com.intlipms.web.entities.CompanyRightsLevel</class>
+    <class>com.intlipms.web.entities.CompanyRommRate</class>
+    <class>com.intlipms.web.entities.CompanyStaffType</class>
+    <class>com.intlipms.web.entities.Customer</class>
+    <class>com.intlipms.web.entities.CustomerActivityLog</class>
+    <class>com.intlipms.web.entities.CustomerActivityType</class>
+    <class>com.intlipms.web.entities.CustomerAudit</class>
+    <class>com.intlipms.web.entities.CustomerPrivileges</class>
+    <class>com.intlipms.web.entities.CustomerRewards</class>
+    <class>com.intlipms.web.entities.CustomerRoomRate</class>
+    <class>com.intlipms.web.entities.Hotel</class>
+    <class>com.intlipms.web.entities.MaintAproval</class>
+    <class>com.intlipms.web.entities.MaintCosting</class>
+    <class>com.intlipms.web.entities.MaintFunds</class>
+    <class>com.intlipms.web.entities.MaintRequest</class>
+    <class>com.intlipms.web.entities.PropertyAreas</class>
+    <class>com.intlipms.web.entities.PropertyItem</class>
+    <class>com.intlipms.web.entities.PropertySchMaint</class>
+    <class>com.intlipms.web.entities.PropertySchMaintLog</class>
+    <class>com.intlipms.web.entities.RoomAsset</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://10.0.5.204:3306/intlipms?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="intlipms"/>
+      <property name="javax.persistence.jdbc.password" value="millinik"/>
+    </properties>
+  </persistence-unit>
+</persistence>
